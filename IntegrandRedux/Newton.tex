@@ -1,0 +1,16 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+Newton interpolation for integer sampling:
+\begin{eqnarray} \nonumber
+p(x) &=& \sum_{i=0}^{R} \frac{\Delta^i(p)(0)}{i!} \left(x \right)_i\\
+\nonumber
+&&\Delta^0(p) := p,~ \Delta(p)(n) = p(n+1) - p(n)\\
+\nonumber
+&& \left(x \right)_0 := 1,~ \left(x \right)_n = x*(x-1)* \cdots * \{x - (n-1)\}
+\end{eqnarray}
+
+\end{document}

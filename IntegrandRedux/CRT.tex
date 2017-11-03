@@ -1,0 +1,20 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+Chinese Remainder Theorem\\
+Let $p_1,p_2 \in \mathbb{N}$ be coprime (not necessarily primes), then for arbitrary $a_1,a_2 \in \mathbb{N}$,
+\begin{eqnarray} \nonumber
+x &=& a_1 \mod p_1 \\
+\nonumber
+x &=& a_2 \mod p_2
+\end{eqnarray}
+have a unique solution modulo $p_1*p_2$.
+Indeed, the solution is
+\begin{eqnarray} \nonumber
+a := a_1*p_2*m_1 + a_2*p_1*m_2,
+\end{eqnarray}
+where $m_1 := p_1^{-1} \mod p_2, m_2 := p_2^{-1} \mod p_1$.
+\end{document}

@@ -1,0 +1,20 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{verbatim}
+> crtRec'
+>   :: Integral a => 
+> .    (Maybe a, a) -> (Maybe a, a) -> (Maybe a, a)
+> crtRec' (Nothing,p) (_,q)       = (Nothing, p*q)
+> crtRec' (_,p)       (Nothing,q) = (Nothing, p*q)
+> crtRec' (Just a1,p1) (Just a2,p2) = (Just a,p)
+>   where
+>     a = (a1*p2*m2 + a2*p1*m1) `mod` p
+>     Just m1 = p1 `inversep` p2 
+>     Just m2 = p2 `inversep` p1
+>     p = p1*p2
+\end{verbatim}
+\end{document}
