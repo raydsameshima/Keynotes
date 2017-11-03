@@ -1,0 +1,15 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+Thiele interpolation for integer sampling:
+\begin{eqnarray}
+\nonumber
+r(x) &=& a_0 + \cfrac{x}{a_1 + \cfrac{x - 1}{a_2 + \cfrac{x- 2}{a_{r-2} + \cfrac{\vdots}{a_{R-1} + \cfrac{x-(R-1)}{a_R}}}}} \\
+\nonumber
+&& a_0 = f(0),~ a_n =\cfrac{1}{\cfrac{2}{\cfrac{3}{\cfrac{\vdots}{\cfrac{n}{f(n)-a_0}-a_1}-a_2} - a_{n-2}} - a_{n-1}} 
+\end{eqnarray}
+
+\end{document}

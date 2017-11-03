@@ -1,0 +1,18 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+
+\usepackage{tikz-feynman}
+\begin{document}
+\begin{eqnarray}
+\nonumber
+\mathcal{N}(q)
+&=&
+\sum_{i_1 << i_s} \Delta_{i_1 \cdots i_s}(q) \prod_{h \neq i_1, \cdots, i_s} D_h \\
+\nonumber
+&&+ \cdots + \sum_{i_1 << i_2} \Delta_{i_1 i_2}(q) \prod_{h \neq i_1, i_2} D_h
+\end{eqnarray}
+
+\end{document}

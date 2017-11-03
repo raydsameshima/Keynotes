@@ -1,0 +1,18 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+
+\usepackage{tikz-feynman}
+\begin{document}
+Introducing an auxiliary variable $t$,
+\begin{eqnarray*}
+h(x,y,t) := f(t*x, t*y)
+\end{eqnarray*}
+and choosing representative $(x,y)$, we can apply univariate functional reconstruction technique:
+\begin{eqnarray*}
+h(x,y;t) = \frac{\sum_{r=0}^R p_r(x,y) t^r}{1+ \sum_{r'=1}^{R'} q_{r'}(x,y) t^{r'}}
+\end{eqnarray*}
+where each "coefficient" is a homogeneous polynomial in $(x,y)$.
+\end{document}

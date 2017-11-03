@@ -1,0 +1,17 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+
+\usepackage{tikz-feynman}
+\begin{document}
+\[*Univariate> let f t = 1/(1+t^2)
+*Univariate> let fs = map f [0..]
+*Univariate> take 10 fs
+[1.0,0.5,0.2,0.1,5.8823529411764705e-2,3.8461538461538464e-2,2.702702702702703e-2,2.0e-2,1.5384615384615385e-2,1.2195121951219513e-2]
+*Univariate> take 10 fs :: [Ratio Int]
+[1 % 1,1 % 2,1 % 5,1 % 10,1 % 17,1 % 26,1 % 37,1 % 50,1 % 65,1 % 82]
+*Univariate> list2rat' it
+Just ([1 % 1,0 % 1,0 % 1],[1 % 1,0 % 1,1 % 1])\]
+\end{document}

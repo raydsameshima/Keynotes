@@ -1,0 +1,15 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+
+\begin{verbatim}
+> firstDifs 
+>   :: (Eq a, Num a) => 
+>      [a] -- map f [0..]
+>   -> [a]
+> firstDifs xs = reverse . map head . difLists $ [xs]
+\end{verbatim}
+\end{document}

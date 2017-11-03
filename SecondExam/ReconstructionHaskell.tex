@@ -1,0 +1,36 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{verbatim}
+> reconstruct :: [(Maybe Int, Int)] -> Maybe (Ratio Integer)
+> reconstruct = matches 10 . makeList
+>   where
+>     matches n (a:as)
+>       | all (a==) $ take (n-1) as = a
+>       | otherwise                     = matches n as
+>     makeList 
+>       = map (fmap fst . guess) . scanl1 crtRec' . toInteger2 . filter (isJust . fst)
+
+--
+
+  *Ffield> let q = 513197683989569 % 1047805145658 :: Ratio Int
+  *Ffield> let ds = imagesAndPrimes q
+  *Ffield> let answer = fmap fromRational . reconstruct $ ds
+  *Ffield> answer :: Maybe (Ratio Int)
+  Just (513197683989569 % 1047805145658)
+
+> prop_rec :: Ratio Int -> Bool
+> prop_rec q = Just q == answer
+>   where
+>    answer :: Maybe (Ratio Int)
+>    answer = fmap fromRational . reconstruct $ ds
+>    ds = imagesAndPrimes q
+
+  *Ffield> quickCheckWith stdArgs { maxSuccess = 100000 } prop_rec 
+  +++ OK, passed 100000 tests.
+\end{verbatim}
+
+\end{document}

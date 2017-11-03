@@ -1,0 +1,19 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+
+\usepackage{tikz-feynman}
+\begin{document}
+\begin{verbatim}
+  *Univariate> map (\p -> map (rho (map (\t -> 1%(1+t^2)) [0..]) p) [0..3]) [0..5]
+  [[Just (1 % 1)   ,Just (1 % 2)    ,Just (1 % 5)    ,Just (1 % 10)]
+  ,[Just ((-2) % 1),Just ((-10) % 3),Just ((-10) % 1),Just ((-170) % 7)]
+  ,[Just ((-1) % 1),Just ((-1) % 10),Just ((-1) % 25),Just ((-1) % 46)]
+  ,[Just (0 % 1)   ,Just (40 % 1)   ,Just (140 % 1)  ,Just (324 % 1)]
+  ,[Just (0 % 1)   ,Just (0 % 1)    ,Just (0 % 1)    ,Just (0 % 1)]
+  ,[Nothing,Nothing,Nothing,Nothing]
+  ]
+\en{verbatim}
+\end{document}
