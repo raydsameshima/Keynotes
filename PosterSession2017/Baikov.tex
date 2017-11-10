@@ -4,14 +4,17 @@
 \usepackage{amsmath} %maths
 \usepackage[utf8]{inputenc} %useful to type directly diacritic characters
 \begin{document}
-\textbf{Baikov parametrization}
+\textbf{\textcolor{blue}{Baikov parametrization}}
 
-Baikov parametrization allows us to write a scalar Feynman integral in the following form:
+\textcolor{red}{Baikov parametrization} is essentially a coordinate change $(\bold{q} \mapsto x:=D)$, which allows us to write a scalar Feynman integral in the following form:
 \begin{eqnarray}
+\nonumber
 \int d^d \bold{q} \frac{1}{D_1^{n_1} \cdots D_N^{n_N}}
 =
 C \int \frac{dx_1 \cdots dx_N}{x_1^{n_1}\cdots x_N^{n_N}} P^{\frac{d-M-1}{2}}
 \end{eqnarray}
-where $M = L+E$ and $P$ is the Baikov polynomial.
+where $M = L+E$ and $P$ is the Jacobi determinant of the coordinate change.
+We call this $P$ \textcolor{red}{Baikov polynomial}, which is a polynomial of $x$'s and external kinematics.
+
 
 \end{document}

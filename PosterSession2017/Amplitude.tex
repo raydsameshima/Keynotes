@@ -4,9 +4,9 @@
 \usepackage{amsmath} %maths
 \usepackage[utf8]{inputenc} %useful to type directly diacritic characters
 \usepackage{tikz-feynman}\begin{document}
-\textbf{Scattering amplitudes}
+\textbf{\textcolor{blue}{Scattering amplitudes}}
 
-A scattering amplitude is given in a diagrammatic form, Feynman diagrams.
+A \textcolor{red}{scattering amplitude} is given in a diagrammatic form $\to$ \textcolor{red}{Feynman diagrams}:
 \begin{eqnarray}
 \nonumber
 \begin{tikzpicture}
@@ -25,7 +25,7 @@ A scattering amplitude is given in a diagrammatic form, Feynman diagrams.
     (b) -- [boson] (k1),
     (c) -- [boson] (k2),
     (d) -- [boson] (k3),
-    (a) -- [boson, half left, looseness=0.6, momentum'=\(q\), edge label=\(D_0^{-1}\)] (b),
+    (a) -- [boson, half left, looseness=0.6, momentum'=\(q\), edge label=\(D_1^{-1}\)] (b),
     (b) -- [boson, half left, looseness=0.6] (c),
     (c) -- [boson, half left, looseness=0.6] (d),
     (d) -- [boson, half left, looseness=0.6] (a),
@@ -34,11 +34,12 @@ A scattering amplitude is given in a diagrammatic form, Feynman diagrams.
 \end{tikzpicture}
 \end{eqnarray}
 This diagram represents a 1 loop, $(2\to 2)$ scattering process.
-We translate this kind of diagram into momentum integral form, an amplitude.
+We translate this kind of diagram into momentum integral form $\to$ a \textcolor{red}{scattering amplitude}.
 \begin{eqnarray}
 \nonumber
 %\int d^dq \mathcal{A}(q) = 
-\int d^dq \frac{\mathcal{N}(q)}{D_0 D_1 D_2 D_3}
+\int d^dq \frac{N(q)}{D_1 D_2 D_3 D_4}
 \end{eqnarray}
 where $N(q)$ is determined by the theoretical model, e.g., the Standard Model.
+
 \end{document}

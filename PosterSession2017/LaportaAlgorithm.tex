@@ -4,15 +4,16 @@
 \usepackage{amsmath} %maths
 \usepackage[utf8]{inputenc} %useful to type directly diacritic characters
 \begin{document}
-\textbf{Laporta algorithm}
+\textbf{\textcolor{blue}{Laporta algorithm}}
 
-For a fixed $N$, IBP identities among the family of integral $I(\bold{n})$ gives us infinite set of linear equations, but the linear space spanned by these integrals is proved to be finite dimensional [2].
+For a fixed $N$, IBP identities among the family of integral $I(\bold{n})$ gives us \textcolor{red}{infinite} set of linear equations, but the linear space spanned by these integrals is proved to be \textcolor{red}{finite dimensional}.
 So, by creating new identities of different $\bold{n}$, we can eventually create enough number of linear equations to solve.
-A solution is called the Master Integrals; any integral can be represented as a finite linear combination of MI's.
+A solution is called \textcolor{red}{Master Integrals}; any integral can be represented as a finite linear combination of MI's.
 
-A well-known implementation is Reduze [3].
-A new implementation is Kira [4], which eliminates linear dependent equations before it solve.
-Since linear dependent equations carry no new information toward the system, eliminating such dependent subset, it can reduce the computational space and time.
+A well-known public code is Reduze.
+More recent implementation is called Kira, which eliminates linear dependent equations before it solves system.
+Since linear dependent equations carry no new information toward the system, eliminating such dependent subset can reduce the computational space and time.
+
 
 
 
