@@ -6,11 +6,21 @@
 \begin{document}
 \textbf{Integral By Parts identities}
 
-Integral by parts identities are a set of the following $i,j, n_1,\cdots, n_K$ indexed form
+Integral by parts identities are a set of the following $i,j, n_1,\cdots, n_K$ indexed relations
 \begin{eqnarray}
+\nonumber
 0 = \int d^d \bold{q} \frac{\partial }{\partial q_i} \frac{p_j}{D_1^{n_1} \cdots D_K^{n_K}} 
 \end{eqnarray}
-where $p_j$ is either external or loop momentum.
-
-
+where $p_j$ is either external or loop momentum, $\bold{q}$ represents $L$-fold integration momenta.
+Taking differentiation, we can rewrite this IBP identity as
+\begin{eqnarray}
+\nonumber
+0 = \sum_i c_i * I(\bold{n_i})
+\end{eqnarray}
+where
+\begin{eqnarray}
+\nonumber
+I(\bold{n}) := \int d^d \bold{q}\frac{1}{D_1^{n_1} \cdots D_K^{n_K}} 
+\end{eqnarray}
+of $\bold{n}$ indexed scalar integral, $c_i$'s are polynomials of $\bold{n}, d$, and external kinematical parameters.
 \end{document}
