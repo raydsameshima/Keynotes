@@ -1,0 +1,8 @@
+A manuscript for 1 min. presentation for 15th annual city tech poster session.
+
+I'm ray sameshima, 4th year ph.d student of physics.
+I'm currently interested in high energy theory, especially a precise computation of scattering amplitudes.
+Scattering amplitudes are given by Feynman integrals, and the number of integrals combinatorially explode.
+One can prove that they can be written as a finite sum of Master Integrals.
+So far, we know how this reduction works, but we do not understand why.
+Within my poster, I briefly explore this reduction algorithm.
