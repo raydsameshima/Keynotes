@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\textbf{\textcolor{blue}{Sketch of a variant Laporta algorithm}}
+
+We represent an IBP identity as a descending list of terms:
+\begin{eqnarray}
+\nonumber
+0 = \sum_i c_i I_i \Leftrightarrow \verb|[c1*I1,c2*I2, ..]|
+\end{eqnarray}
+where $I_1$ is the most \textcolor{red}{complicated} integral.
+Among the system of IBP identities, we group the equations with the same highest integral, and place like the following form:
+\begin{eqnarray}
+\nonumber
+\left(\begin{array}{cccccccc} 
+\bullet & \bullet & \bullet \\
+\bullet & \bullet & \bullet & \bullet &\bullet \\
+\bullet & \bullet & \bullet & \bullet &\bullet & \bullet\\
+\bullet & \bullet & \bullet & \bullet &\bullet & \bullet & \bullet\\
+&\bullet & \bullet & \\
+&\bullet & \bullet & \bullet & \\
+&\bullet & \bullet & \bullet &\bullet &\bullet &\bullet & \bullet\\
+&&\bullet & \bullet & \bullet \\
+&&\bullet & \bullet &\bullet & \bullet &\bullet \\
+&&&\vdots
+\end{array}\right)
+\end{eqnarray}
+I.e., in each subset of equations, they share the highest integral (the left most $\bullet$) and they line up from shorter to longer.
+
+Within the subset of equations, substituting the top element into the successors, we eventually have the \textcolor{red}{right triangular form}:
+\begin{eqnarray}
+\nonumber
+\left(\begin{array}{cccccccc} 
+\bullet & \bullet & \bullet \\
+&\bullet & \bullet & \bullet & \bullet &\bullet \\
+&&\bullet \\
+&&& \bullet & \bullet & \bullet &\bullet & \bullet\\
+&&&&\bullet & \bullet & \\
+&&&&&\vdots
+\end{array}\right)
+\end{eqnarray}
+
+Once we reach this right triangular form, use \textcolor{red}{back substitution}; for the first two lists, using second equation, we substitute it in the first and represent the highest integral via lower integrals:
+\begin{eqnarray}
+\nonumber
+\left(\begin{array}{cccccccc} 
+\bullet & \bullet & \bullet \\
+&\bullet & \bullet & \bullet & \bullet &\bullet 
+\end{array}\right)
+\mapsto
+\left(\begin{array}{cccccccc} 
+\bullet & 0 & \bullet & \bullet & \bullet &\bullet \\
+&\bullet & \bullet & \bullet & \bullet &\bullet 
+\end{array}\right)
+\end{eqnarray}
+Finally we have the following form of equations:
+\begin{eqnarray}
+\nonumber
+\left(\begin{array}{cccccccc} 
+\bullet & 0 & 0&0&0 & \star & \star & \star \\
+&\bullet & 0 & 0 & 0 & \star & \star & \star \\
+&&\bullet &0 &0 & \star & \star & \star \\
+&&& \bullet & 0 & \star & \star & \star \\
+&&&&\bullet & \star & \star & \star \\
+&&&&&\star & \star & \star\\
+\end{array}\right)
+\end{eqnarray}
+The $\star$'s are the \textcolor{red}{Master Integrals} of this system.
+
+
+
+\end{document}
