@@ -1,0 +1,8 @@
+Polynomial representations of Integration-By-Parts relations
+
+Scattering amplitude in quantum field theories allow us to compare the phenomenological prediction of theoretical models with the measurement data at collider experiments.
+The study of scattering amplitudes, in terms of their symmetries and analytic properties, can provide a framework to develop techniques and efficient algorithms to evaluate cross sections.
+To evaluate higher-order amplitudes, a computational technique called Integration-By-Parts Reduction is at present an unavoidable step.
+In this process, a large set of linear relations between integrals is generated; by solving them, we can get a set Master integrals, which are necessary ingredients for our calculations.
+In our poster, we describe some interesting representations for this formalism and their applications to generate Integration-By-Parts relations.
+Within these representations, integrals are fully characterized by a single polynomial, and the Integration-By-Parts relations becomes a polynomial identity.
