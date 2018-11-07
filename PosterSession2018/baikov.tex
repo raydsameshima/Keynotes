@@ -1,0 +1,32 @@
+% LaTex Compiler
+
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{tikz-feynman}
+
+\begin{document}
+
+\textbf{\textcolor{blue}{Baikov parametrization}}
+
+Under the integration variable change
+\begin{align*}
+(l_1, \cdots, l_L) \mapsto (D_1, \cdots, D_N),
+\end{align*}
+we have
+\begin{align*}
+I(\vec{n}) \sim \int \frac{d D_1 \cdots dD_N}{D_1^{n_1} \cdots D_N^{n_N}} P^{\frac{d-L-E-1}{2}}
+\end{align*}
+where $P$ is the Jacobi determinant of this variable change
+\begin{align}
+\nonumber
+P &= \det \left[ q_i \cdot q_j \right] (D_1,\cdots, D_N)
+\end{align}
+that is, the determinant of scalar products expressed by denominators, and this $P$ is called  the \textcolor{red}{Baikov polynomial}.
+The integration domain is determined by the zeros of $P$.
+
+$P$ and the integration domain do not depend on $n_1, \cdots, n_N$, so the family of integrals are characterized by a polynomial $P$.
+
+\end{document}
