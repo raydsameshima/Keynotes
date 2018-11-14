@@ -1,0 +1,13 @@
+A manuscript for 1 min presentation for the poster session 2018.
+
+(Introducing myself)
+
+They are all so called Feynman diagrams, and we physicists can translate them into integrals.
+One can show that they span an abstract vector space, and the numbers of generator is infinite.
+However, we can plug in linear relations which come from Integration-By-Parts techniques, and
+reduce the number of independent elements finite.
+
+We can still go one more step.
+We can classify integrals and the members of a family can be characterized by a single polynomial.
+Recently people showed that the dimension of vector space is written in an important topological invariance, Euler characteristics.
+
