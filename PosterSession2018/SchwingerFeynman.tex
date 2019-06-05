@@ -1,0 +1,31 @@
+% LaTex Compiler
+
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{tikz-feynman}
+
+\begin{document}
+
+\textbf{\textcolor{blue}{Schwinger-Feynman parametrization}}
+
+Using  \textcolor{red}{Mellin transformation}, one can show
+\begin{align*}
+I(\vec{n}) \sim 
+\prod_{a=1}^N \int_0^\infty  \frac{dx_a x^{n_a-1}}{\Gamma(n_a)} \mathcal{G}^{-d/2}
+\end{align*}
+where
+\begin{align*}
+\mathcal{G} &:= \mathcal{U} + \mathcal{F} \\
+\mathcal{U} &:= \det \begin{pmatrix} A & B \\ B^t & C \end{pmatrix} \\
+\mathcal{F} &:= \det A 
+\end{align*}
+and the associated matrices are given in the following quadratic form:
+\begin{align*}
+\sum_a^N x_a D_a = l^t A l +  2B^t l + C.
+\end{align*}
+This polynomial $\mathcal{G}$ does not depend on $n_1, \cdots, n_N$ and characterizes the family of integrals.
+
+\end{document}

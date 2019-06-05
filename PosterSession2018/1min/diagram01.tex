@@ -1,0 +1,143 @@
+% !TeX program = lualatex
+
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+%\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{tikz-feynman}
+
+\begin{document}
+
+
+
+\begin{eqnarray*}
+\begin{tikzpicture}
+\begin{feynman}
+  \vertex (a);
+  \vertex [right=of a](b);
+  \vertex [above right=of b](c);
+%  \vertex [right=of b](d);
+  \vertex [below right=of b](e);
+  \vertex [below right=of c](f);
+  \vertex [right=of f](g);
+  
+  \diagram* {
+    (a) -- (b),
+    (c) -- (e),
+    (b) -- [quarter left] (c) -- [quarter left] (f),
+    (b) -- [quarter right] (e) -- [quarter right] (f),
+    (f) -- (g),
+),
+  };
+\end{feynman}
+\end{tikzpicture} 
+\\
+\begin{tikzpicture}
+\begin{feynman}
+  \vertex (a);
+  \vertex [right=of a](b);
+  \vertex [right=of b](c);
+  \vertex [right=of c](d);
+  \vertex [right=of d](e);
+
+\diagram* {
+	(a) -- (b),
+	(b) -- [half left] (c) -- [half left] (b),
+	(c) -- [half right] (d) -- [half right] (c),
+	(d) -- (e),
+};
+\end{feynman}
+\end{tikzpicture}
+\\
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a);
+\vertex [right=of a](b);
+\vertex [below right=of b](c);
+\vertex [above right=of c](d);
+\vertex [right=of d](e);
+
+\diagram* {
+	(a) -- (b),
+	(b) -- [half left] (d),
+	(b) -- [quarter right] (c) -- [quarter right] (d),
+	(c) -- [quarter left] (d),
+	(d) -- (e),
+};
+\end{feynman}
+\end{tikzpicture}
+\\
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a);
+\vertex [right=of a](b);
+\vertex [above right=of b](c);
+\vertex [below right=of c](d);
+\vertex [right=of d](e);
+
+\diagram* {
+	(a) -- (b),
+	(b) -- [quarter left] (c) -- [quarter left] (d),
+	(c) -- [quarter right] (d),
+	(b) -- [half right] (d),
+	(d) -- (e),
+};
+\end{feynman}
+\end{tikzpicture}
+\\
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a);
+\vertex [right=of a](b);
+\vertex [above right=of b](c);
+\vertex [below right=of c](d);
+\vertex [right=of d](e);
+
+\diagram* {
+	(a) -- (b),
+	(b) -- [quarter left] (c) -- [quarter left] (d),
+	(b) -- [quarter right] (c),
+	(b) -- [half right] (d),
+	(d) -- (e),
+};
+\end{feynman}
+\end{tikzpicture}
+\\
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (a);
+\vertex [right=of a](b);
+\vertex [below right=of b](c);
+\vertex [above right=of c](d);
+\vertex [right=of d](e);
+
+\diagram* {
+	(a) -- (b),
+	(b) -- [half left] (d),
+	(b) -- [quarter left] (c),
+	(b) -- [quarter right] (c) -- [quarter right] (d),
+	(d) -- (e),
+};
+\end{feynman}
+\end{tikzpicture}
+\\
+\begin{tikzpicture}
+\begin{feynman}
+  \vertex (a);
+  \vertex [right=of a](b);
+  \vertex [right=of b](c);
+  \vertex [right=of c](d);
+
+\diagram* {
+	(a) -- (b),
+	(b) -- [half left] (c),
+	(b) -- (c),
+	(b) -- [half right] (c),
+	(c) -- (d),
+};
+\end{feynman}
+\end{tikzpicture}
+\end{eqnarray*}
+
+\end{document}
