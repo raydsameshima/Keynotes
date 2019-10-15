@@ -20,11 +20,20 @@ a framework to develop techniques and efficient algorithms to evaluate cross sec
 
 Translating from Feynman graphs, Feynman rules allow us to write scattering amplitudes in terms 
 Feynman Integral, which are given in momentum space integrals. 
+Within this momentum parametrization, internal lines in a graph become denominators in integrands and 
+we can generalize its exponent into an arbitrary integers.
+In this way we consider a family of integrals which are characterized by the set of exponents in the denominators.
+
 We usually transform these integrals of momentum parametrizations into various parametrizations; in our poster,
 we discuss two different parametrizations of Feynman Integrals, namely a family of Schwinger-Feynman 
 parametrizations and Baikov parametrization.
-Schwinger-Feynman parametrizations clarify some graph-theoretical properties which the given Feynman graphs have, and Baikov parametrization gives us geometrical interpretations of Feynman integrals.
+Schwinger-Feynman parametrizations clarify some graph-theoretical properties which given Feynman graphs have, 
+and Baikov parametrization gives us geometrical interpretations of Feynman integrals through Gram-determinant.
 
+We show that, in Schwinger-Feynman parametrizations, the famous Cauchy's integral formula can provide
+a correct way of handling negative exponents in the denominators; the price we have to pay for this procedure
+is dimension shift from d to d+2.
+Within Baikov parametrization, the opposite dimension shift (from d+2 to d) is relatively easy to perform.
 
 
 
