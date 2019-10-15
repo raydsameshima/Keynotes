@@ -11,30 +11,18 @@ Within these representations, integrals are fully characterized by a single poly
 
 Dead line: 2019/10/17
 
-On Different Parametrizations of Feynman Integrals
+On Various Parametrizations of Feynman Integrals
+Giovanni Ossola, Ray D. Sameshima 
+Physics Department 
 
-Scattering amplitudes in quantum field theories allow us to compare the phenomenological prediction 
-of theoretical models with the measurement data at collider experiments.
-The study of scattering amplitudes, in terms of their symmetries and analytic properties, can provide 
-a framework to develop techniques and efficient algorithms to evaluate cross sections.
+Scattering amplitudes in quantum field theories allow us to compare the phenomenological prediction of theoretical models with the measurement data at collider experiments. 
+Feynman diagrams and the related Feynman rules allow us to write scattering amplitudes in terms of a class of Integrals over momentum space, known as Feynman Integrals. 
 
-Translating from Feynman graphs, Feynman rules allow us to write scattering amplitudes in terms 
-Feynman Integral, which are given in momentum space integrals. 
-Within this momentum parametrization, internal lines in a graph become denominators in integrands and 
-we can generalize its exponent into an arbitrary integers.
-In this way we consider a family of integrals which are characterized by the set of exponents in the denominators.
+In our poster, we discuss two different parametrizations of Feynman Integrals, namely Lee-Pomeransky and Baikov parametrization. 
+By going to different parametrizations, we do not simply choose different variables to represent the same multidimensional integral, the gain is much higher: some properties of Feynman integrals, and more in general, scattering amplitudes, become particularly transparent when we use the appropriate parametrization. 
 
-We usually transform these integrals of momentum parametrizations into various parametrizations; in our poster,
-we discuss two different parametrizations of Feynman Integrals, namely a family of Schwinger-Feynman 
-parametrizations and Baikov parametrization.
-Schwinger-Feynman parametrizations clarify some graph-theoretical properties which given Feynman graphs have, 
-and Baikov parametrization gives us geometrical interpretations of Feynman integrals through Gram-determinant.
-
-We show that, in Schwinger-Feynman parametrizations, the famous Cauchy's integral formula can provide
-a correct way of handling negative exponents in the denominators; the price we have to pay for this procedure
-is dimension shift from d to d+2.
-Within Baikov parametrization, the opposite dimension shift (from d+2 to d) is relatively easy to perform.
-
+Indeed, the Lee-Pomeransky parametrizations clarifies some graph-theoretical properties which Feynman graphs intrinsically have, and Baikov parametrization gives us geometrical interpretations of Feynman integrals through Gram-determinants. 
+We also show that, in these parametrizations, the famous Cauchy's integral formula can provide a recipe to handle negative exponents in the denominators of Feynman integrals; the price we have to pay for this procedure is simply a dimensional shift.
 
 
 
