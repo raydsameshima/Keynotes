@@ -1,0 +1,35 @@
+\begin{thebibliography}{BBKP17}
+
+\bibitem[Bai06]{Baikov:2005nv}
+P.~A. Baikov.
+\newblock {A Practical criterion of irreducibility of multi-loop Feynman
+  integrals}.
+\newblock {\em Phys. Lett.}, B634:325--329, 2006.
+
+\bibitem[BBKP17]{Bitoun:2017nre}
+Thomas Bitoun, Christian Bogner, Rene~Pascal Klausen, and Erik Panzer.
+\newblock {Feynman integral relations from parametric annihilators}.
+\newblock 2017.
+
+\bibitem[Gro11]{Grozin:2011mt}
+A.~G. Grozin.
+\newblock {Integration by parts: An Introduction}.
+\newblock {\em Int. J. Mod. Phys.}, A26:2807--2854, 2011.
+
+\bibitem[LP13]{Lee:2013hzt}
+Roman~N. Lee and Andrei~A. Pomeransky.
+\newblock {Critical points and number of master integrals}.
+\newblock {\em JHEP}, 11:165, 2013.
+
+\bibitem[MM18]{Mastrolia:2018uzb}
+Pierpaolo Mastrolia and Sebastian Mizera.
+\newblock {Feynman Integrals and Intersection Theory}.
+\newblock 2018.
+
+\bibitem[OPP07]{Ossola:2006us}
+Giovanni Ossola, Costas~G. Papadopoulos, and Roberto Pittau.
+\newblock {Reducing full one-loop amplitudes to scalar integrals at the
+  integrand level}.
+\newblock {\em Nucl. Phys.}, B763:147--169, 2007.
+
+\end{thebibliography}
